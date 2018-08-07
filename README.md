@@ -1,9 +1,9 @@
 # chatbot-telegram
 
-# Docker
+# docker
 docker run -p5555:5000 rasa/rasa_nlu:0.10.4-spacy python -m rasa_nlu.train configs/spacy_config.json
 
-# Python bot
+# python bot
 pipenv shell
 export FLASK_APP=[your file path]
 flask run
