@@ -1,7 +1,7 @@
 # chatbot-telegram
 
 ## docker
-TBD: docker run -p5555:5000 caneleiros-fc
+~~docker run -p5555:5000 caneleiros-fc~~
 
 ## rasa.nlu
 ```
