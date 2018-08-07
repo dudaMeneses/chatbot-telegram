@@ -6,19 +6,13 @@
 ## rasa.nlu
 ```
 python -m rasa_nlu.train -c configs/config_spacy.yml -d data/examples/rasa/training-data.json
-```
-```
 python -m rasa_nlu.server -P 5050 --path projects
 ```
 
 ## python bot
 ```
 pipenv shell
-```
-```
 export FLASK_APP=[your file path]
-```
-```
 flask run
 ```
 
