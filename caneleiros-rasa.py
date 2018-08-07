@@ -17,10 +17,12 @@ def process_message(update):
     data = {}
     data["chat_id"] = update["message"]["from"]["id"]
 
-    url = "http://localhost:5555/parse"
+    url = "http://localhost:5050/parse"
     query = json.dumps({"q":update["message"]["text"].encode("utf-8")})
 
     rasaResponse = requests.post(url, data=str(query))
+
+    logging.info(rasaResponse.json())
 
     if rasaResponse.status_code == requests.codes.ok:
         data["text"] = rasaResponse.json()["intent"]["name"]
