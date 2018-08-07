@@ -1,7 +1,7 @@
 # chatbot-telegram
 
 # docker
-docker run -p5555:5000 rasa/rasa_nlu:0.10.4-spacy python -m rasa_nlu.train configs/spacy_config.json
+docker run -p5555:5000 caneleiros-fc run python -m rasa_nlu.train -c /app/configs/config_spacy.yml -d /app/data/training-data.json
 
 # python bot
 pipenv shell
