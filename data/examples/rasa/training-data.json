@@ -2,106 +2,100 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "quero marcar um futebol para as 21:30",
-        "intent": "marcar_jogo",
+        "text": "I want to schedule a match",
+        "intent": "schedule_match",
+        "entities": []
+      },
+      {
+        "text": "Confirm me",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "I will join",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "I am in",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "I am out",
+        "intent": "disconfirm",
+        "entities": []
+      },
+      {
+        "text": "I will not play",
+        "intent": "disconfirm",
+        "entities": []
+      },
+      {
+        "text": "I am not going",
+        "intent": "disconfirm",
+        "entities": []
+      },
+      {
+        "text": "I cant go",
+        "intent": "disconfirm",
+        "entities": []
+      },
+      {
+        "text": "The match is cancelled",
+        "intent": "delete_match",
+        "entities": []
+      },
+      {
+        "text": "The match will not happen anymore because it is raining",
+        "intent": "delete_match",
+        "entities": []
+      },
+      {
+        "text": "Match tomorrow at 19:00",
+        "intent": "schedule_match",
         "entities": [
           {
-            "start": 32,
-            "end": 37,
-            "value": "21:30",
-            "entity": "hora"
+            "start": 18,
+            "end": 23,
+            "value": "19:00",
+            "entity": "hour"
           }
         ]
       },
       {
-        "text": "marcar uma pelada dia 20/08 as 12:30",
-        "intent": "marcar_jogo",
-        "entities": [
-          {
-            "start": 22,
-            "end": 27,
-            "value": "20/08",
-            "entity": "dia"
-          },
-          {
-            "start": 31,
-            "end": 36,
-            "value": "12:30",
-            "entity": "hora"
-          }
-        ]
-      },
-      {
-        "text": "jogo 12/12 as 21:30",
-        "intent": "marcar_jogo",
-        "entities": [
-          {
-            "start": 5,
-            "end": 10,
-            "value": "12/12",
-            "entity": "dia"
-          },
-          {
-            "start": 14,
-            "end": 19,
-            "value": "21:30",
-            "entity": "hora"
-          }
-        ]
-      },
-      {
-        "text": "o Joao vai ",
-        "intent": "confirma",
-        "entities": [
-          {
-            "start": 2,
-            "end": 6,
-            "value": "Joao",
-            "entity": "atleta"
-          }
-        ]
-      },
-      {
-        "text": "Fulano disse que joga",
-        "intent": "confirma",
+        "text": "Julian will go",
+        "intent": "confirm",
         "entities": [
           {
             "start": 0,
             "end": 6,
-            "value": "Fulano",
-            "entity": "atleta"
+            "value": "Julian",
+            "entity": "player"
           }
         ]
       },
       {
-        "text": "me confirma",
-        "intent": "confirma",
-        "entities": []
-      },
-      {
-        "text": "to dentro",
-        "intent": "confirma",
-        "entities": []
-      },
-      {
-        "text": "eu vou",
-        "intent": "confirma",
-        "entities": []
-      },
-      {
-        "text": "nao vou mais",
-        "intent": "desconfirma",
-        "entities": []
-      },
-      {
-        "text": "o Chico nao vai poder ir mais",
-        "intent": "desconfirma",
+        "text": "Mark is going",
+        "intent": "confirm",
         "entities": [
           {
-            "start": 2,
-            "end": 7,
-            "value": "Chico",
-            "entity": "atleta"
+            "start": 0,
+            "end": 4,
+            "value": "Mark",
+            "entity": "player"
+          }
+        ]
+      },
+      {
+        "text": "Jorge can go anymore",
+        "intent": "disconfirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Jorge",
+            "entity": "player"
           }
         ]
       }
